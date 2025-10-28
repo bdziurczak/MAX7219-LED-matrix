@@ -11,12 +11,9 @@ void setup() {
   Serial.begin(9600);
 }
 
-size_t counter = 0;
 void loop() {
   display.clear();
-  display.write(1, 0b01100000); // Display '1'
-  display.write(3, 0b01011011); // Display '2'
   delay(2000);
-  display.printMessage("HELLO", 500);
+  display.printMessage("BARTEK", 500);
   delay(1000);
 }
